@@ -4,3 +4,8 @@ Counter App (HTML + CSS + JS). Implements increment, decrement, reset, bounds wi
 GitHub Repository: https://github.com/08817711624aiml-coder/LakshayAggarwal_25-WD-FSWD-A4-JULY-6164_Minor-Project
 
 Live Demo: https://08817711624aiml-coder.github.io/LakshayAggarwal_25-WD-FSWD-A4-JULY-6164_Minor-Project/
+
+## Screenshots
+![Home](screenshots/home.jpg)
+![Bounds disabled](screenshots/bounds-disabled.jpg)
+![Negative mode](screenshots/negative-mode.jpg)
