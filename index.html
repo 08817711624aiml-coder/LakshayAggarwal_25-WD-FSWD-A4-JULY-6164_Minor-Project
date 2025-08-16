@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Counter App </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Counter App</h1>
+
+    <div class="panel">
+      <div id="count" class="count zero">0</div>
+
+      <div class="controls">
+        <button id="decrementBtn" title="Decrement">−</button>
+        <button id="resetBtn" title="Reset to 0">Reset</button>
+        <button id="incrementBtn" title="Increment">+</button>
+      </div>
+
+      <div class="settings">
+        <label>
+          Step:
+          <input id="stepInput" type="number" min="1" step="1" value="1" />
+        </label>
+
+        <label class="toggle">
+          <input id="allowNegativeToggle" type="checkbox" />
+          Allow negative values
+        </label>
+
+        <label>
+          Min:
+          <input id="minInput" type="number" value="0" />
+        </label>
+
+        <label>
+          Max:
+          <input id="maxInput" type="number" value="100" />
+        </label>
+      </div>
+
+      <div class="hints" id="hints"></div>
+    </div>
+
+    <footer>
+      <small>Tip: ArrowUp/ArrowDown to change the count, R to reset.</small>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

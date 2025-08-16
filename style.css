@@ -1,0 +1,123 @@
+:root {
+  --bg: #0b1220;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --positive: #16a34a;
+  --negative: #dc2626;
+  --border: #243041;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 10% 0%, #0f172a, #020617);
+  color: var(--text);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;
+  padding: 24px;
+}
+
+h1 {
+  text-align: center;
+  margin: 8px 0 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.panel {
+  background: linear-gradient(180deg, var(--panel), #0b1220);
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.count {
+  font-size: 56px;
+  text-align: center;
+  margin: 12px 0 20px;
+  transition: transform 120ms ease, color 120ms ease;
+}
+.count.positive { color: var(--positive); }
+.count.zero { color: var(--text); }
+.count.negative { color: var(--negative); }
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+button {
+  background: #0b1220;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 18px;
+  min-width: 64px;
+  cursor: pointer;
+  transition: transform 80ms ease, background 140ms ease, opacity 140ms ease;
+}
+button:hover { background: #0e1626; transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  filter: grayscale(20%);
+}
+
+.settings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+label input[type="number"] {
+  width: 100%;
+  background: #0b1220;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.toggle {
+  grid-column: span 2;
+}
+
+.hints {
+  margin-top: 10px;
+  min-height: 22px;
+  color: var(--muted);
+  text-align: center;
+}
+
+footer {
+  margin-top: 16px;
+  text-align: center;
+  color: var(--muted);
+}
